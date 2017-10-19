@@ -4,7 +4,9 @@ import axios from 'axios';
 import AlbumDetial from './AlbumDetail';
 
 class AlbumList extends Component {
-  state = { albums: [] };
+  state = {
+    albums: []
+  };
 
   componentWillMount() {
     axios
@@ -13,9 +15,7 @@ class AlbumList extends Component {
   }
 
   renderAlbums() {
-    return this.state.albums.map(album =>
-      <AlbumDetial key={album.title} album={album} />
-    );
+    return this.state.albums.map(album => <AlbumDetial key={album.title} album={album} />);
   }
 
   render() {

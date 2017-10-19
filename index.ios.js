@@ -9,7 +9,7 @@ import { AppRegistry, View } from 'react-native';
 import Header from './src/components/Header';
 import AlbumList from './src/components/AlbumList';
 
-export default class albums extends Component {
+export default class Albums extends Component {
   render() {
     return (
       <View>
@@ -20,4 +20,4 @@ export default class albums extends Component {
   }
 }
 
-AppRegistry.registerComponent('albums', () => albums);
+AppRegistry.registerComponent('albums', () => Albums);
