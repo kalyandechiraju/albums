@@ -5,7 +5,13 @@ import CardItem from './CardItem';
 
 const AlbumDetail = ({ album }) => {
   const { title, artist, thumbnail_image, image, url } = album;
-  const { thumbnailContainerStyle, thumbnailStyle, headerStyle, headerTextStyle, imageStyle, buttonStyle } = styles;
+  const {
+    thumbnailContainerStyle,
+    thumbnailStyle,
+    headerStyle,
+    headerTextStyle,
+    imageStyle
+  } = styles;
 
   return (
     <Card>
@@ -13,7 +19,8 @@ const AlbumDetail = ({ album }) => {
         <View style={thumbnailContainerStyle}>
           <Image
             style={thumbnailStyle}
-            source={{ uri: thumbnail_image }} />
+            source={{ uri: thumbnail_image }}
+          />
         </View>
         <View style={headerStyle}>
           <Text style={headerTextStyle}>{title}</Text>
